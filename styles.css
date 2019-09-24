@@ -3,10 +3,10 @@ body, html {
 }
 
 body{
-  margin: 0px;
+  margin: auto;
   background-color: #444;
   font-size: 18px;
-  background: url(src/Pages-From-OAKSTAR-Weekly-2013-03-08-p2-large.gif); 
+  background: url(src/Pages-From-OAKSTAR-Weekly-2013-03-08-p2-large.gif) no-repeat fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
