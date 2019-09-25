@@ -1,13 +1,13 @@
-const makeBlinkyDancer = function(top, left, timeBetweenSteps) {
+const BlinkyDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
 };
 
 //import makeDancer superclass methods
-makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
+BlinkyDancer.prototype = Object.create(makeDancer.prototype);
 //reset constructor
-makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
+BlinkyDancer.prototype.constructor = BlinkyDancer;
 
-makeBlinkyDancer.prototype.step = function(timeBetweenSteps) {
+BlinkyDancer.prototype.step = function(timeBetweenSteps) {
     makeDancer.prototype.step.call(this, timeBetweenSteps);
     // toggle() is a jQuery method to show/hide the <span> tag.
     // See http://api.jquery.com/category/effects/ for this and
@@ -15,4 +15,4 @@ makeBlinkyDancer.prototype.step = function(timeBetweenSteps) {
     this.$node.toggle();
   };
 
-window.makeBlinkyDancer = makeBlinkyDancer;
+window.BlinkyDancer = BlinkyDancer;

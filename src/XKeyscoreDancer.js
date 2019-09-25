@@ -5,7 +5,7 @@ const makeXKeyscoreDancer = function(top, left, timeBetweenSteps) {
 //import makeDancer superclass methods
 makeXKeyscoreDancer.prototype = Object.create(makeDancer.prototype);
 //reset constructor
-makeXKeyscoreDancer.prototype.constructor = makeBlinkyDancer;
+makeXKeyscoreDancer.prototype.constructor = makeXKeyscoreDancer;
 
 makeXKeyscoreDancer.prototype.step = function(timeBetweenSteps) {
     makeDancer.prototype.step.call(this, timeBetweenSteps);
