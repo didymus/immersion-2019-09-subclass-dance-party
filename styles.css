@@ -49,3 +49,7 @@ body, a:link, a:visited, a:active {
   width: 500px;
   position: absolute;
 }
+
+.mouse-over {
+  filter: invert(100%);
+}
