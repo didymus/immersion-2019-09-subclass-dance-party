@@ -1,5 +1,7 @@
 const makeXKeyscoreDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
+  this.$node = $('<img class="xkeyscore" src="src/whitecircle.png">');
+  //makeDancer.apply(this, arguments);
 };
 
 //import makeDancer superclass methods

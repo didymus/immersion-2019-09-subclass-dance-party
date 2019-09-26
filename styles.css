@@ -37,3 +37,15 @@ body, a:link, a:visited, a:active {
   border-radius: 10px;
   position: absolute;
 }
+
+.xkeyscore {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+
+.redacted {
+  height: 100px;
+  width: 500px;
+  position: absolute;
+}

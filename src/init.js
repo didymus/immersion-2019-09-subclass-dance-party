@@ -27,8 +27,17 @@ $(document).ready(function() {
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
-    window.dancers.push(dancer);
-    //$(dancer.$node).attr("class", dancerMakerFunctionName);
+
     $('body').append(dancer.$node);
+    //push the dancers
+    window.dancers.push(dancer);
+    //mouse over functionality
+    dancer.$node.on('mouseover', function () {
+      dancer.$node.addClass('mouse-over')
+   });
   });
+
+  $(".lineupDancerButton").on("click", function(event){
+    $.each(window.dancers, function(index, value){ value.lineUp(); })
+  })
 });
