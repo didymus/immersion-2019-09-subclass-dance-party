@@ -1,5 +1,7 @@
 const BlinkyDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
+  //this.$node.addClass('blinky');
+  this.setPosition.call(this, top, left);
 };
 
 //import makeDancer superclass methods

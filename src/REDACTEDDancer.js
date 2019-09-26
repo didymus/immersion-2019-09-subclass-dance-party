@@ -1,6 +1,8 @@
 const makeREDACTEDDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
   this.$node = $('<img class="redacted" src="src/blackbar.png">');
+  //this.$node.addClass('redacted');
+  this.setPosition.call(this, top, left);
 };
 
 //import makeDancer superclass methods
